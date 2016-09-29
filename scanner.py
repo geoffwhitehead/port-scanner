@@ -1,3 +1,5 @@
+# Ref: Followed tutorial found on http://null-byte.wonderhowto.com/how-to/sploit-make-python-port-scanner-0161074/ by Sergeant Sploit
+
 #!usr/bin/env/python
 from socket import *
 import sys, time
@@ -43,7 +45,6 @@ for port in range(min_port, max_port):  # for each of the ports in the range do.
     except KeyboardInterrupt:
         print("\n\n[*] User requested interrupt.")
         print("[*] Application shutting down")
-        sys.exit(1) 
-        
-print("Complete")
+        sys.exit(1)
 
+print("Complete")
